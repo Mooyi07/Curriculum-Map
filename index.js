@@ -28,14 +28,21 @@ for(list of lists){
     })
 }
 
-
-
 function units(){
     let numUnits = 0;
+    let maxUnits = 26;
+
     var valUnits = document.getElementById("left").children;
     for (let i = 0; i < valUnits.length; i++){
         var val = valUnits[i].getAttribute('data-value');
         numUnits = numUnits + parseInt(val); 
     };
+    if (numUnits > maxUnits){
+        document.getElementById("overloading").style.display = "block";
+    }
+    else {
+        document.getElementById("overloading").style.display = "none";
+    }
     document.getElementById("units").innerHTML = "UNITS : " + numUnits;
+
 }
