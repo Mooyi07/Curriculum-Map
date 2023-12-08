@@ -39,10 +39,11 @@
     border: 2px dashed #fff;
 }
 .list{
-    background: #e91e63;
+    border-radius: 1em;
+    background: rgb(207, 159, 0);
     height: 60px;
     margin: 8px;
-    color: #fff;
+    color: #000000;
     display: flex;
     align-items: center;
     cursor: grab;
