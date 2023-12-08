@@ -28,6 +28,8 @@ for(list of lists){
     })
 }
 
+
+
 function units(){
     let numUnits = 0;
     var valUnits = document.getElementById("left").children;
