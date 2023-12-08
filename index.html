@@ -4,19 +4,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Map</title>
     <link rel="stylesheet" href="styles.css">
-    <script src=index.js></script>
 </head>
 <body>
 
 <div class="container">
     <div id="left">
-        <div class="list" draggable="true"><img src="icon.png">List Item 1</div>
-        <div class="list" draggable="true"><img src="icon.png">List Item 2</div>
-        <div class="list" draggable="true"><img src="icon.png">List Item 3</div>
-        <div class="list" draggable="true"><img src="icon.png">List Item 4</div>
+        <div class="list" draggable="true" value="3">Advanced Algebra</div>
+        <div class="list" draggable="true" value="5">Engineering Mathematics</div>
+        <div class="list" draggable="true" value="1">Engineering Drawing and Electronics Standards</div>
+        <div class="list" draggable="true" value="2">Programming Logic and Design</div>
     </div>
     <div id="right"></div>
 </div>
 
+<h1>HELLO WORLD</h1>
+
+<script>
+let lists = document.getElementsByClassName("list");
+let rightBox = document.getElementById("right");
+let leftBox = document.getElementById("left");
+
+for(list of lists){
+    list.addEventListener("dragstart", function(e){
+        let selected = e.target;
+
+        rightBox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+        rightBox.addEventListener("drop", function(e){
+            rightBox.appendChild(selected);
+            selected = null;
+        });
+
+        leftBox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+        leftBox.addEventListener("drop", function(e){
+            leftBox.appendChild(selected);
+            selected = null;
+        });
+    })
+}
+
+function units(){
+
+}
+
+</script>
 </body>
 </html>
