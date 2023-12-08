@@ -5,20 +5,27 @@
     box-sizing: border-box;
     caret-color: transparent;
 }
+.information {
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.information h1 { 
+    padding: 10px;
+    color: white;
+    border: 1px solid grey;
+    align-items: center;
+}
 .container {
     width: 100%;
     min-height: 100vh;
-    background: #0b0423;
+    background: black;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-#units {
-    color: white;
 }
 #left, #right{
     width: 300px;
-    min-height: 400px;
+    min-height: 500px;
     margin: 20px;
     border: 2px dashed #fff;
 }
