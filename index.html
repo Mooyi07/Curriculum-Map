@@ -8,9 +8,9 @@
 <body>
 
 <div class="container">
+    <h1 id="units" >UNITS : 0</h1>
     <div id="left">
-        <h1 id="units">UNITS : 0</h1>
-        <div class="list" draggable="true" id="MATH113-V" data-value="3">Advanced Algebra</div>
+        <div class="list" draggable="true" data-value="3">Advanced Algebra</div>
         <div class="list" draggable="true" data-value="5">Engineering Mathematics</div>
         <div class="list" draggable="true" data-value="1">Engineering Drawing and Electronics Standards</div>
         <div class="list" draggable="true" data-value="2">Programming Logic and Design</div>
@@ -20,6 +20,9 @@
 </div>
 
 <script>
+
+units();
+
 let lists = document.getElementsByClassName("list");
 let rightBox = document.getElementById("right");
 let leftBox = document.getElementById("left");
@@ -50,9 +53,10 @@ for(list of lists){
 
 function units(){
     let numUnits = 0;
-    for (let i = 0; i < 4; i++){
-        var val = document.getElementById("left").getElementsByClassName("list").getAttribute('data-value');
-
+    var valUnits = document.getElementById("left").children;
+    for (let i = 0; i < valUnits.length; i++){
+        var val = valUnits[i].getAttribute('data-value');
+        numUnits = numUnits + parseInt(val); 
     };
     document.getElementById("units").innerHTML = "UNITS : " + numUnits;
 }
