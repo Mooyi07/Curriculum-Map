@@ -7,27 +7,27 @@
 }
 .information {
     width: 100%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;
 }
 .information h1 { 
     padding: 10px;
-    color: white;
-    border: 1px solid grey;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     align-items: center;
 }
 #overloading  {
     width: 100%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;
     padding: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     align-items: center;
 }
 .container {
     width: 100%;
     min-height: 89.8vh;
-    background: black;
+    background: rgb(0, 0, 0);
     display: flex;
     align-items: center;
 }
@@ -35,7 +35,7 @@
     min-width: 500px;
     min-height: 400px;
     margin: 20px;
-    border: 2px dashed #fff;
+    border: 2px dashed #ffffff;
     display: flex;
     flex-wrap: wrap;
 }
@@ -44,19 +44,18 @@
     max-width: 600px;
     min-height: 400px;
     margin: 20px;
-    border: 2px dashed #fff;
+    border: 2px dashed #ffffff;
 }
 .list{
-    border-radius: 1em;
-    background: rgb(207, 159, 0);
-    height: 60px;
-    margin: 8px;
-    color: #000000;
+    background-color:#eef; 
+    color:#000000; 
+    border-style:solid;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px;
     display: flex;
     align-items: center;
     cursor: grab;
-    font-size: 15px;
-    padding: 5px;
     flex-wrap: wrap;
 }
 .list img {
