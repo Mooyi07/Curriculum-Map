@@ -16,22 +16,23 @@
 <div class="information">
     <h1 id="studName">Villanueva, Lanz Joseph T.</h1>
     <h1 id="units" >UNITS : 0</h1>
-    <select id="yearLevel" onchange="change_myselect(this.value)">
-        <option value="">YEAR LEVEL:</option>
+    <select id="yearLevel" onchange="yearLev(this.value)">
+        <option value="0">YEAR LEVEL:</option>
         <option value="1">FIRST YEAR</option>
         <option value="2">SECOND YEAR</option>
         <option value="3">THIRD YEAR</option>
         <option value="4">FOURTH YEAR</option>
     </select>
-    <select id="semester" onchange="change_myselect(this.value)">
-        <option value="">SEMESTER/TERM:</option>
+    <select id="semester" onchange="semTerm(this.value)">
+        <option value="0">SEMESTER/TERM:</option>
         <option value="1">FIRST TERM</option>
         <option value="2">SECOND TERM</option>
         <option value="3">THIRD TERM</option>
         <option value="4">OFF TERM</option>
       </select>
-    <h1 id="overloading">Error! You are overloading</h1>
+    <h1 id="maxUnits">Maximum Units : 0</h1>
 </div>
+<h1 id="overloading">Error! You are overloading</h1>
 
 <div class="container">
     <div id="left"></div>

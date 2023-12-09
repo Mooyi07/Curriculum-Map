@@ -1,8 +1,19 @@
 units();
 
-let lists = document.getElementsByClassName("list");
-let rightBox = document.getElementById("right");
-let leftBox = document.getElementById("left");
+var MaxUnits = [
+    [0, 0,  0,  0,  0],
+    [0, 26, 23, 20, 10],
+    [0, 21, 20, 20, 10],
+    [0, 23, 23, 19, 10],
+    [0, 17, 12, 10, 10],
+];
+
+var yearL = 0;
+var semT = 0;
+
+var lists = document.getElementsByClassName("list");
+var rightBox = document.getElementById("right");
+var leftBox = document.getElementById("left");
 
 for(list of lists){
     list.addEventListener("dragstart", function(e){
@@ -30,11 +41,11 @@ for(list of lists){
 
 function units(){
     let numUnits = 0;
-    let maxUnits = 26;
+    let maxUnits = MaxUnits[yearL][semT];
 
-    var valUnits = document.getElementById("left").children;
+    let valUnits = document.getElementById("left").children;
     for (let i = 0; i < valUnits.length; i++){
-        var val = valUnits[i].getAttribute('data-value');
+        let val = valUnits[i].getAttribute('data-value');
         numUnits = numUnits + parseInt(val); 
     };
     if (numUnits > maxUnits){
@@ -45,4 +56,18 @@ function units(){
     }
     document.getElementById("units").innerHTML = "UNITS : " + numUnits;
 
+}
+
+function yearLev(yL){
+    yearL = parseInt(yL);
+    displayMaxUnits();
+}
+
+function semTerm(sT){
+    semT = parseInt(sT);
+    displayMaxUnits();
+}
+
+function displayMaxUnits(){
+    document.getElementById("maxUnits").innerHTML = "Maximum Units : " + MaxUnits[yearL][semT];
 }
