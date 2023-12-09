@@ -1,4 +1,7 @@
-units();
+let yearL = 0;
+let semT = 0;
+
+let valUnits = document.getElementById("left").children;
 
 var MaxUnits = [
     [0, 0,  0,  0,  0],
@@ -8,8 +11,15 @@ var MaxUnits = [
     [0, 17, 12, 10, 10],
 ];
 
-var yearL = 0;
-var semT = 0;
+units(valUnits, yearL, semT);
+
+function yearLev(yL){
+    yearL = parseInt(yL);
+}
+
+function semTerm(sT){
+    semT = parseInt(sT);
+}
 
 var lists = document.getElementsByClassName("list");
 var rightBox = document.getElementById("right");
@@ -25,7 +35,7 @@ for(list of lists){
         rightBox.addEventListener("drop", function(e){
             rightBox.appendChild(selected);
             selected = null;
-            units();
+            units(valUnits, yearL, semT);
         });
 
         leftBox.addEventListener("dragover", function(e){
@@ -34,16 +44,15 @@ for(list of lists){
         leftBox.addEventListener("drop", function(e){
             leftBox.appendChild(selected);
             selected = null;
-            units();
+            units(valUnits, yearL, semT);
         });
     })
 }
 
-function units(){
+function units(valUnits, yearL, semT){
     let numUnits = 0;
     let maxUnits = MaxUnits[yearL][semT];
 
-    let valUnits = document.getElementById("left").children;
     for (let i = 0; i < valUnits.length; i++){
         let val = valUnits[i].getAttribute('data-value');
         numUnits = numUnits + parseInt(val); 
@@ -56,16 +65,6 @@ function units(){
     }
     document.getElementById("units").innerHTML = "UNITS : " + numUnits;
 
-}
-
-function yearLev(yL){
-    yearL = parseInt(yL);
-    displayMaxUnits();
-}
-
-function semTerm(sT){
-    semT = parseInt(sT);
-    displayMaxUnits();
 }
 
 function displayMaxUnits(){
