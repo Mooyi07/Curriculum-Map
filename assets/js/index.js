@@ -70,3 +70,4 @@ function units(valUnits, yearL, semT){
 function displayMaxUnits(){
     document.getElementById("maxUnits").innerHTML = "Maximum Units : " + MaxUnits[yearL][semT];
 }
+
