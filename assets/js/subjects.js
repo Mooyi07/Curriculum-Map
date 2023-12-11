@@ -97,5 +97,24 @@ const Subjects = [
         equivCode: "GEC4-V",
         desc: "Mathematics in the Modern World",
         units: 3
+    },
+    {   // Purposive Communication
+        subCode: "GEC5-V",
+        equivCode: "GEC5-V",
+        desc: "Purposive Communication",
+        units: 3
+    },
+    {   // Rhythmic and Recreational Activities	
+        subCode: "PE2-V",
+        preReq: "PE1-V",
+        equivCode: "PE2-V",
+        desc: "Rhythmic and Recreational Activities",
+        units: 2
+    },
+    {   // 	National Service Training Program 2 (NROTC II/CWTS II)	
+        subCode: "NSTP2-V",
+        equivCode: "NSTP2-V",
+        desc: "National Service Training Program 2 (NROTC II/CWTS II)",
+        units: 3
     }
 ]
