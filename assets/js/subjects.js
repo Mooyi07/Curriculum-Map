@@ -116,5 +116,51 @@ const Subjects = [
         equivCode: "NSTP2-V",
         desc: "National Service Training Program 2 (NROTC II/CWTS II)",
         units: 3
+    },
+    {   // 	Computer Programming 2 (Object-Oriented)
+        subCode: "COMP212A-V",
+        preReq: "COMP132-V",
+        equivCode: "COMP212A-V",
+        desc: "Computer Programming 2 (Object-Oriented)",
+        units: 2
+    },
+    {   // 	Engineering Calculus 2
+        subCode: "MATH134ECE-V",
+        preReq: "MATH124ECE-V",
+        equivCode: "MATH134ECE-V",
+        desc: "Engineering Calculus 2",
+        units: 4
+    },
+    {   // 	Engineering Physics 1
+        subCode: "PHYS134ECE-V",
+        preReq: "MATH124ECE-V",
+        equivCode: "PHYS134ECE-V",
+        desc: "Engineering Physics 1",
+        units: 4
+    },
+    {   // 	Fundamentals of Electrical Circuits	
+        subCode: "CPE134-V",
+        equivCode: "CPE134-V",
+        desc: "Fundamentals of Electrical Circuits",
+        units: 4
+    },
+    {   // 	Gender and Society
+        subCode: "GEE1-V",
+        equivCode: "GEE1-V",
+        desc: "Gender and Society",
+        units: 3
+    },
+    {   // 	Readings in Philippine History
+        subCode: "GEC2-V",
+        equivCode: "GEC2-V",
+        desc: "Readings in Philippine History",
+        units: 3
+    },
+    {   // 	Supervised Industrial Training 1 (6 weeks/240 hours)
+        subCode: "SIT1-V",
+        preReq: "PHYS134ECE-V,MATH134ECE-V,GEE1-V,GEC2-V,CPE134-V,COMP212A-V,PE2-V,NSTP2-V,MATH124ECE-V,GEC5-V,GEC4-V,DRAW132-V,COMP132-V,CHEM124-V,PE1-V,NSTP1-V,MATH115-V,MATH113-V,GEC1-V,EM112ECE-V,ECE113-V,ECE111-V,CPE112A-V,CPE112-V",
+        equivCode: "SIT1-V",
+        desc: "Supervised Industrial Training 1 (6 weeks/240 hours)",
+        units: 2.5
     }
 ]
