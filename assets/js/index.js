@@ -14,6 +14,13 @@ var MaxUnits = [
     [0, 17, 12, 10, 10],
 ];
 
+var rightB = document.getElementById("right");
+
+for (let i = 0; i < Subjects.length; i++){
+    let subj = "<div class='list' draggable='true' data-value='" + Subjects[i].units + "'>" + Subjects[i].desc + "</div>";
+    rightB.insertAdjacentElement("after", subj);
+}
+
 units(valUnits, yearL, semT);
 
 function yearLev(yL){
