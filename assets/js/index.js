@@ -17,8 +17,7 @@ var MaxUnits = [
 var rightB = document.getElementById("right");
 
 for (let i = 0; i < Subjects.length; i++){
-    let subj = "<div class='list' draggable='true' data-value='" + Subjects[i].units + "'>" + Subjects[i].desc + "</div>";
-    rightB.insertAdjacentElement("after", subj);
+    createAttr(i);
 }
 
 units(valUnits, yearL, semT);
@@ -79,4 +78,10 @@ function units(valUnits, yearL, semT){
 
 function displayMaxUnits(){
     document.getElementById("maxUnits").innerHTML = "Maximum Units : " + MaxUnits[yearL][semT];
+}
+
+function createAttr(i){
+    const h2 = document.getElementById("empty");
+    var html = "<div class='list' draggable='true' data-value='" + Subjects[i].units + "'>" + Subjects[i].desc + "</div>";
+    h2.insertAdjacentHTML("afterend", html);
 }
