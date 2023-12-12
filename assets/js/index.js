@@ -16,7 +16,7 @@ var MaxUnits = [
 
 var rightB = document.getElementById("right");
 
-for (let i = 0; i < Subjects.length; i++){
+for (let i = Subjects.length-1; i >= 0; i--){
     createAttr(i);
 }
 
@@ -82,6 +82,6 @@ function displayMaxUnits(){
 
 function createAttr(i){
     const h2 = document.getElementById("empty");
-    var html = "<div class='list' draggable='true' data-value='" + Subjects[i].units + "'>" + Subjects[i].desc + "</div>";
+    var html = "<div id='" + Subjects[i].subCode + "' class='list' draggable='true' data-value='" + Subjects[i].units + "'>" + Subjects[i].desc + "</div>";
     h2.insertAdjacentHTML("afterend", html);
 }
