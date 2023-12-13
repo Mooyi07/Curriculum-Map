@@ -15,7 +15,11 @@
 <body>
 
 <div class="information">
-    <h1 id="studName">Villanueva, Lanz Joseph T.</h1>
+    <h1 id="studName"><?php 
+        $studentName = "Lanz Joseph T. Villanueva";
+        echo $studentName;
+    ?>
+    </h1>
     <h1 id="units" >UNITS : 0</h1>
     <select id="yearLevel" onchange="yearLev(this.value), displayMaxUnits()">
         <option value="0">YEAR LEVEL:</option>
