@@ -1,66 +1,77 @@
 [
     {   
         "subCode": "MATH113-V",
+        "preReq": "",
         "equivCode": "MATH113-V",
         "desc": "Advanced Algebra",
         "units": 3
     },
     {   
         "subCode": "CPE112-V",
+        "preReq": "",
         "equivCode": "CPE112-V",
         "desc": "Computer Engineering as a Discipline",
         "units": 2
     },
     { 
         "subCode": "ECE113-V",
+        "preReq": "",
         "equivCode": "ECE113-V",
         "desc": "Discrete Mathematics",
         "units": 3
     },
     {  
         "subCode": "ECE111-V",
+        "preReq": "",
         "equivCode": "ECE111-V",
         "desc": "Engineering Drawing and Electronics Standards",
         "units": 1
     },
     {  
         "subCode": "MATH115-V",
+        "preReq": "",
         "equivCode": "MATH115-V",
         "desc": "Engineering Mathematics",
         "units": 5
     },
     {   
         "subCode": "EM112ECE-V",
+        "preReq": "",
         "equivCode": "EM112ECE-V",
         "desc": "Engineering Measurement: Metrology/Surveying",
         "units": 2
     },
     {   
         "subCode": "PE1-V",
+        "preReq": "",
         "equivCode": "PE1-V",
         "desc": "Physical Fitness and Activities",
         "units": 2
     },
     {   
         "subCode": "CPE112A-V",
+        "preReq": "",
         "equivCode": "CPE112A-V",
         "desc": "Programming Logic and Design",
         "units": 2
     },
     {   
         "subCode": "GEC1-V",
+        "preReq": "",
         "equivCode": "GEC1-V",
         "desc": "Understanding the Self",
         "units": 3
     },
     {   
         "subCode": "NSTP1-V",
+        "preReq": "",
         "equivCode": "NSTP1-V",
         "desc": "National Service Training Program 1 (NROTC I/CWTS I)",
         "units": 3
     },
     {  
         "subCode": "CHEM124-V",
+        "preReq": "",
         "equivCode": "CHEM124-V",
         "desc": "Chemistry for Engineers",
         "units": 4
@@ -88,12 +99,14 @@
     },
     {   
         "subCode": "GEC4-V",
+        "preReq": "",
         "equivCode": "GEC4-V",
         "desc": "Mathematics in the Modern World",
         "units": 3
     },
     {   
         "subCode": "GEC5-V",
+        "preReq": "",
         "equivCode": "GEC5-V",
         "desc": "Purposive Communication",
         "units": 3
@@ -107,6 +120,7 @@
     },
     {  
         "subCode": "NSTP2-V",
+        "preReq": "",
         "equivCode": "NSTP2-V",
         "desc": "National Service Training Program 2 (NROTC II/CWTS II)",
         "units": 3
@@ -134,18 +148,21 @@
     },
     {   
         "subCode": "CPE134-V",
+        "preReq": "",
         "equivCode": "CPE134-V",
         "desc": "Fundamentals of Electrical Circuits",
         "units": 4
     },
     {   
         "subCode": "GEE1-V",
+        "preReq": "",
         "equivCode": "GEE1-V",
         "desc": "Gender and Society",
         "units": 3
     },
     {  
         "subCode": "GEC2-V",
+        "preReq": "",
         "equivCode": "GEC2-V",
         "desc": "Readings in Philippine History",
         "units": 3
