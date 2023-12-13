@@ -1,8 +1,6 @@
 const sub = document.createElement('script');
 sub.src = "subjects.js";
 
-JSON.parse(subjects);
-
 let yearL = 0;
 let semT = 0;
 
