@@ -162,5 +162,19 @@ const Subjects = [
         equivCode: "SIT1-V",
         desc: "Supervised Industrial Training 1 (6 weeks/240 hours)",
         units: 2.5
+    },  
+    {   // Computer Programming 3 (Java EE) 
+        subCode: "COMP222A-V",
+        preReq: "COMP212A-V",
+        equivCode: "COMP222A-V",
+        desc: "Computer Programming 3 (Java EE)",
+        units: 2
+    },
+    {   // Data Structures and Algorithm Analysis
+        subCode: "COMP223-V",
+        preReq: "COMP212A-V",
+        equivCode: "COMP223-V",
+        desc: "Data Structures and Algorithm Analysis",
+        units: 3
     }
 ]
